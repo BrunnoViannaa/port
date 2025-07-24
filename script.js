@@ -16,9 +16,9 @@ function mostrarInfo(secao) {
     } else if (secao === 'contato') {
       conteudo.innerHTML = `
         <p class="linha">> Contato:</p>
-        <p><a href="mailto:seuemail@email.com" target="_blank">Email</a></p>
-        <p><a href="https://www.linkedin.com/in/seuperfil/" target="_blank">LinkedIn</a></p>
-        <p><a href="https://github.com/seuusuario" target="_blank">GitHub</a></p>
+        <p><a href="mailto:brunnovianna0@gmail.com" target="_blank">Email</a></p>
+        <p><a href="https://www.linkedin.com/in/brunno-vianna-269973328/" target="_blank">LinkedIn</a></p>
+        <p><a href="https://github.com/brunnoviannaa" target="_blank">GitHub</a></p>
       `;
     } else if (secao === 'puxar') {
       conteudo.innerHTML = `
@@ -27,13 +27,11 @@ function mostrarInfo(secao) {
       `;
     }
   }
-  
-  // Ativar o campo de comando
+
 document.addEventListener('keydown', () => {
     document.getElementById('comando').focus();
   });
-  
-  // Interpretar o que foi digitado
+
   document.getElementById('comando').addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
       const comando = this.value.toLowerCase().trim();
@@ -55,8 +53,7 @@ document.addEventListener('keydown', () => {
   });
   
   
-  
-// Matrix Effect
+
 const canvas = document.getElementById('matrixCanvas');
 const ctx = canvas.getContext('2d');
 
@@ -72,7 +69,7 @@ function drawMatrix() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  ctx.fillStyle = "#0F0"; // Verde neon
+  ctx.fillStyle = "#0F0";
   ctx.font = fontSize + "px monospace";
 
   drops.forEach((y, i) => {
@@ -88,22 +85,21 @@ function drawMatrix() {
 }
 
 setInterval(drawMatrix, 33);
-// Toggle Matrix Effect PRO
+
 const toggleButton = document.getElementById('toggleMatrix');
 let matrixActive = true;
 
 toggleButton.addEventListener('mouseenter', () => {
-  toggleButton.style.opacity = 0.5; // quando passa o mouse
+  toggleButton.style.opacity = 0.5; 
 });
 
 toggleButton.addEventListener('mouseleave', () => {
-  toggleButton.style.opacity = 0.05; // mouse sai
+  toggleButton.style.opacity = 0.05; 
 });
 
 toggleButton.addEventListener('click', () => {
   matrixActive = !matrixActive;
   canvas.style.display = matrixActive ? 'block' : 'none';
 
-  // Troca o ícone do botão
   toggleButton.innerHTML = matrixActive ? '🧿' : '☠️';
 });
