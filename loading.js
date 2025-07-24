@@ -18,6 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => {
       loadingScreen.style.display = 'none';
       conteudo.style.display = 'block';
-    }, 4000); // Tempo de loading em milissegundos (4 segundos)
+    }, 4000); 
   });
   
