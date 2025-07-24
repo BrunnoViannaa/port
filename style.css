@@ -82,7 +82,7 @@ body {
     z-index: 1000;
     font-size: 1.2rem;
   }
-  /* Animação para aparecer suavemente */
+
 @keyframes fadeIn {
     from {
       opacity: 0;
@@ -94,7 +94,7 @@ body {
     }
   }
   
-  /* Aplica no conteúdo quando mudar */
+
   .conteudo {
     margin-top: 20px;
     animation: fadeIn 0.5s ease forwards;
